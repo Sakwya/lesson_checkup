@@ -1,13 +1,7 @@
-import docker
-
-global process
-
-# 连接 Docker 守护程序
-client = docker.from_env()
-
-# 启动一个容器
-container = client.containers.run("scrapinghub/splash", detach=True, ports={'8050': 8050})
+import lesson_checkup
 
 if __name__ == '__main__':
-    input()
+    container = lesson_checkup.Splash()
+    container.run()
+    input("input something to stop container\n")
     container.stop()
