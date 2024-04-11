@@ -1,2 +1,6 @@
 docker~=7.0.0
 Scrapy~=2.11.1
+
+requests~=2.31.0
+pillow~=10.3.0
+itemadapter~=0.3.0
